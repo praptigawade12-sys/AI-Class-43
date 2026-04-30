@@ -1,5 +1,5 @@
 import os
-import streamline as st
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
