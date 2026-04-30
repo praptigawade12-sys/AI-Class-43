@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GROQ_API_KEY  = NONE
+GROQ_API_KEY  = None
 if "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" in st.secrets:
   GROQ_API_KEY = st.secrets["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"]
 else:
