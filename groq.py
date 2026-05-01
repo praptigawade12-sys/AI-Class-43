@@ -2,7 +2,14 @@ import config
 from openai import OpenAI
 
 GROQ_URL = "https://api.groq.com/openai/v1"
-MODELS = getattr(config, "GROQ_MODELS", ["llama-3.1-8b-instant","mixtral-8x7b-32768"])
+
+MODELS = [
+
+"llama-3.1-8b-instant",
+
+"llama-3.1-70b-versatile"
+
+]
 
 def generate_response(prompt: str, temperature: float = 0.3, max_tokens: int = 512) -> str:
     key = config.GROQ_API_KEY
