@@ -37,7 +37,7 @@ def complete_answer(question: str, max_rounds: int = 2) -> str:
         if not more or more.strip() in ans:
             break
         ans = (ans.rstrip() + "\n" + more.lstrip()).strip()
-        round += 1
+        rounds += 1
 
     return ans
 def main():
