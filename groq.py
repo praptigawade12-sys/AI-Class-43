@@ -5,7 +5,7 @@ GROQ_URL = "https://api.groq.com/openai/v1"
 
 MODELS = [
 
-"llama3-8b-8192"
+"llama-3.3-70b-versatile"
 
 ]
 
