@@ -25,9 +25,10 @@ def generate_response(prompt: str, temperature: float = 0.3, max_tokens: int = 5
                 temperature=temperature,
                 max_tokens=max_tokens
             )
-            return r.choices[0].content
+            return r.choices[0].message.content
         except Exception as e:
             last_err = e
+            print(e)
 
     return(
         "Groq model failed. \n"
